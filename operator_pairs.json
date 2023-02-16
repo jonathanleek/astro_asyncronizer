@@ -1,0 +1,28 @@
+{
+  "operator_pairs":[
+    {
+        "sync_location": "airflow.sensors.time_sensor",
+        "sync_operator": "TimeSensor",
+        "async_location": "airflow.sensors.time_sensor",
+        "async_operator": "TimeSensorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.snowflake.operators.snowflake",
+        "sync_operator": "SnowflakeOperator",
+        "async_location": "astronomer.providers.snowflake.operators.snowflake",
+        "async_operator": "SnowflakeOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.microsoft.azure.operators.data_factory",
+        "sync_operator": "AzureDataFactoryRunPipelineOperator",
+        "async_location": "astronomer.providers.microsoft.azure.operators.data_factory",
+        "async_operator": "AzureDataFactoryRunPipelineOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryInsertJobOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryInsertJobOperatorAsync"
+    }
+  ]
+}
