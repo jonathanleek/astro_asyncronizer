@@ -1,4 +1,5 @@
 import json
+import os
 
 operator_pairs = json.loads("operator_pairs.json")
 
@@ -16,3 +17,13 @@ def asyncronize_dag(filename, async_filename):
   # Write updated DAG to new file
   with open(async_filename, 'w') as async_file:
     async_file.write(filedata)
+
+def asyncronizer(dag_directory, output_dag_directory):
+  file_list = os.listdir(dag_directory)
+  for file in file_list:
+    extension = file.split(".")[1]
+    file_directory = os.path.join(dag_directory, file)
+    newfile_name = "async_" + file
+    newfile_path = os.path.join(output_dag_directory, newfile_name)
+    if extension == ".py":
+      asyncronize_dag(file_directory, newfile_path)
