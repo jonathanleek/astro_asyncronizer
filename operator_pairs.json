@@ -23,6 +23,96 @@
         "sync_operator": "BigQueryInsertJobOperator",
         "async_location": "astronomer.providers.google.cloud.operators.bigquery",
         "async_operator": "BigQueryInsertJobOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryInsertJobOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryValueCheckOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryValueCheckOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryValueCheckOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryCheckOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryCheckOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryIntervalCheckOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryIntervalCheckOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.bigquery",
+        "sync_operator": "BigQueryGetDataOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.bigquery",
+        "async_operator": "BigQueryGetDataOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.cncf.kubernetes.operators.kubernetes_pod",
+        "sync_operator": "KubernetesPodOperator",
+        "async_location": "astronomer.providers.cncf.kubernetes.operators.kubernetes_pod",
+        "async_operator": "KubernetesPodOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.databricks.operators.databricks",
+        "sync_operator": "DatabricksRunNowOperator",
+        "async_location": "astronomer.providers.databricks.operators.databricks",
+        "async_operator": "DatabricksRunNowOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.databricks.operators.databricks",
+        "sync_operator": "DatabricksSubmitRunOperator",
+        "async_location": "astronomer.providers.databricks.operators.databricks",
+        "async_operator": "DatabricksSubmitRunOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.amazon.aws.operators.redshift_sql",
+        "sync_operator": "RedshiftSQLOperator",
+        "async_location": "astronomer.providers.amazon.aws.operators.redshift_sql",
+        "async_operator": "RedshiftSQLOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.amazon.aws.operators.redshift_cluster",
+        "sync_operator": "RedshiftPauseClusterOperator",
+        "async_location": "astronomer.providers.amazon.aws.operators.redshift_cluster",
+        "async_operator": "RedshiftPauseClusterOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.amazon.aws.operators.redshift_cluster",
+        "sync_operator": "RedshiftResumeClusterOperator",
+        "async_location": "astronomer.providers.amazon.aws.operators.redshift_cluster",
+        "async_operator": "RedshiftResumeClusterOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.amazon.aws.operators.emr",
+        "sync_operator": "EmrContainerOperator",
+        "async_location": "astronomer.providers.amazon.aws.operators.emr",
+        "async_operator": "EmrContainerOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.apache.livy.operators.livy",
+        "sync_operator": "LivyOperator",
+        "async_location": "astronomer.providers.apache.livy.operators.livy",
+        "async_operator": "LivyOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.amazon.aws.operators.batch",
+        "sync_operator": "BatchOperator",
+        "async_location": "astronomer.providers.amazon.aws.operators.batch",
+        "async_operator": "BatchOperatorAsync"
+    },
+    {
+        "sync_location": "airflow.providers.google.cloud.operators.kubernetes_engine",
+        "sync_operator": "GKEStartPodOperator",
+        "async_location": "astronomer.providers.google.cloud.operators.kubernetes_engine",
+        "async_operator": "GKEStartPodOperatorAsync"
     }
   ]
 }
